@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade Média</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="shortcut icon" href="https://www.globalconect.com.br/assets/images/speedtest600x300.gif"
+        type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            Velocidade Média
+        </h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ínicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title">Cálculo</div>
+        <input type="number" id="distancia" placeholder="Distância">
+        <input type="number" id="tempo" placeholder="Tempo">
+        <div class="btn-calculo">
+            <button class="btn btn-light">Limpar</button>
+            <button class="btn btn-success" onclick="calcular()">Calcular</button>
+        </div>
+        <input type="number" id="velocidade" placeholder="Velocidade" readonly>
+    </div>
+
+    <div class="container">
+        <div class="title">Resultados</div>
+        <textarea id="resultado" rows="10" readonly></textarea>
+    </div>
+
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
